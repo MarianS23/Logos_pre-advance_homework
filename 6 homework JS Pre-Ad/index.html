@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signInForm">
+            <form id="form">
+                <h2>please sign up</h2>
+                <div class="box">
+                    <input type="text" class="textInput" name="userName" id="userName" pattern="^[A-Za-z]{3,20}$">
+                    <label for="userName" class="myPlaceholder">First name</label>
+                    <div class="checkMark">
+                        <div id="check-part-1" class="check-sign"></div>
+                        <div id="check-part-2" class="check-sign"></div>
+                    </div>
+                    <div class="redCross">
+                        <div id="check-part-1-cross" class="check-error"></div>
+                        <div id="check-part-2-cross" class="check-error"></div>
+                    </div>
+                    <div class="redMessage">
+                        <p>Please provide a valid First name</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <input type="text" class="textInput" name="userSurname" id="userSurname" pattern="^[A-Za-z]{3,20}$">
+                    <label for="userSurname" class="myPlaceholder">Last name</label>
+                    <div class="checkMark">
+                        <div id="check-part-1" class="check-sign"></div>
+                        <div id="check-part-2" class="check-sign"></div>
+                    </div>
+                    <div class="redCross">
+                        <div id="check-part-1-cross" class="check-error"></div>
+                        <div id="check-part-2-cross" class="check-error"></div>
+                    </div>
+                    <div class="redMessage">
+                        <p>Please provide a valid First name</p>
+                    </div>
+                </div>
+                <div class="box" id="emailBox">
+                    <input type="text" class="textInput" name="userEmail" id="userEmail" pattern="\w+@\w+\.\w{2,5}$">
+                    <label for="userEmail" class="myPlaceholder">Email adress</label>
+                    <div class="checkMark">
+                        <div id="check-part-1" class="check-sign"></div>
+                        <div id="check-part-2" class="check-sign"></div>
+                    </div>
+                    <div class="redCross">
+                        <div id="check-part-1-cross" class="check-error"></div>
+                        <div id="check-part-2-cross" class="check-error"></div>
+                    </div>
+                    <div class="redMessage">
+                        <p>Please provide a valid First name</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <input type="text" class="textInput" name="userPassword" id="userPassword" pattern="[a-z0-9]{8,15}">
+                    <label for="userPassword" class="myPlaceholder">Password</label>
+                    <div class="checkMark">
+                        <div id="check-part-1" class="check-sign"></div>
+                        <div id="check-part-2" class="check-sign"></div>
+                    </div>
+                    <div class="redCross">
+                        <div id="check-part-1-cross" class="check-error"></div>
+                        <div id="check-part-2-cross" class="check-error"></div>
+                    </div>
+                    <div class="redMessage">
+                        <p>Please provide a valid First name</p>
+                    </div>
+                </div>
+                <input type="button" name="signUPBtn" id="signUpBtn" value="sign up" disabled>
+                <input type="button" name="signInBtn" id="signInBtn" value="sign in now">
+            </form>
+            <form id="signInForm">
+                <h2>please sign in</h2>
+                <div class="box">
+                    <input type="text" class="textInput" name="userEmail" id="SIuserEmail" pattern="\w+@\w+\.\w{2,5}$">
+                    <label for="SIuserEmail" class="myPlaceholder">Email adress</label>
+                    <div class="checkMark">
+                        <div id="check-part-1" class="check-sign"></div>
+                        <div id="check-part-2" class="check-sign"></div>
+                    </div>
+                    <div class="redCross">
+                        <div id="check-part-1-cross" class="check-error"></div>
+                        <div id="check-part-2-cross" class="check-error"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <input type="text" class="textInput" name="userPassword" id="SIuserPassword" pattern="[a-z0-9]{8,15}">
+                    <label for="SIuserPassword" class="myPlaceholder">Password</label>
+                    <div class="checkMark">
+                        <div id="check-part-1" class="check-sign"></div>
+                        <div id="check-part-2" class="check-sign"></div>
+                    </div>
+                    <div class="redCross">
+                        <div id="check-part-1-cross" class="check-error"></div>
+                        <div id="check-part-2-cross" class="check-error"></div>
+                    </div>
+                    <div class="redMessage">
+                        <p>enter correct password or email</p>
+                    </div>
+                </div>
+                <input type="button" name="signUpBtn" id="signInBtn1" value="sign in" >
+                <input type="button" name="signUPBtn" id="signUpBtn1" value="sign up now">
+            </form>
+            <div class="userWindow">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                <h1 id="fullUserName"></h2>
+                <h5 id="showUserEmail"></h5>
+                <p class="workPosition">front-end</p>
+                <div class="line"></div>
+                <input type="button" name="signOutBtn" id="signOutBtn" value="sign out">
+            </div>
+        </div>
+
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
