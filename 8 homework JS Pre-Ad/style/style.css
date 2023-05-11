@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+input,
+textarea{
+    font-family: inherit;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(244, 244, 244);
+    
+}
+header h1{
+    font-size: 40px;
+}
+
+.wrapper{
+    width: 700px;
+    height: fit-content;
+    margin: 100px auto;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.badWord{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 10px 12px;
+    
+}
+#wordList{
+    color: red;
+}
+.enterArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#enterWord{
+    width: 60%;
+    height: 30px;
+    padding-left: 5px;
+
+}
+#addWord{
+    width: 15%;
+    height: 30px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;  
+}
+#addWord:hover{
+    outline: 2px solid rgb(169, 111, 3);
+}
+
+#clearList{
+    width: 15%;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+#clearList:hover{
+    outline: 2px solid rgb(223, 49, 49);
+}
+
+#enterText{
+    width: 97%;
+    height: 70px;
+    margin: 10px 11px;
+    resize: none;
+    padding: 5px;
+}
+
+#startCenzor{
+    width: 97%;
+    margin: 10px 11px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+#startCenzor:hover{
+    outline: 2px solid rgb(23, 168, 33);
+}
