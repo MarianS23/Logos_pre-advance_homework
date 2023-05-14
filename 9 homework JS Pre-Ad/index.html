@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="setUser">
+            <form id="setUserInfoForm">
+                <label for="userLogin">Login</label>
+                <input class="userInfo" type="text" id="userLogin" placeholder="Enter login" pattern="^[A-Za-z]{3,20}$">
+                <label for="userPassword">Password</label>
+                <input class="userInfo" type="password" id="userPassword" placeholder="Enter password" pattern="[\w\d]{2,15}">
+                <label for="userEmail">Email</label>
+                <input class="userInfo" type="email" id="userEmail" placeholder="Enter email" pattern="\w+@\w+\.\w{2,5}$">
+                <input type="button" value="Add user" id="addUser">
+                <input type="button" value="Edit user" id="editUser">
+            </form>
+        </div>
+        <div class="showUser">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Login</th>
+                        <th>Password</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- <tr>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th><input type="button"  class="editBtn" value="Edit"></th>
+                        <th><input type="button"  class="deleteBtn" value="Delete"></th>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
